@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>QALar | Documentation</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<style type="text/css" media="screen">
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+	body {
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		background: #f5f8fa;
+		color: #000;
+	}
+	h1 { color: #666;
+		font-weight: normal;
+	}
+	h2 {
+		color: #666;
+		font-weight: normal;
+		margin-top: 0;
+	}
+	h3 {
+		color: #222;
+		font-weight: normal;
+		margin: 0 0 10px 0;
+	}
+	p {
+		margin: 0;
+		line-height: 20px;
+	}
+	table, hr, .box { margin-bottom:25px; }
+	.box p { margin-bottom:10px; }
+	a { color: #bb0000;}
+	a:hover { color: #ea0000;}
+	.row-body {
+		border-bottom: 0;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 900px;
+		overflow: auto;
+	}
+	.message-container {
+		padding: 0 20px 10px 10px;
+	}
+	.message-form-content {
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0);
+		border: 1px solid rgba(0, 40, 100, 0.12);
+		background: #FFF;
+		color: #6B6B6B;
+		border-radius: 3px;
+		overflow: auto;
+	}
+	.message-inner {
+		padding: 20px;
+		overflow: auto;
+	}
+	.divider {
+		height: 1px;
+		width: 100%;
+		background: #DEE0E3;
+		float: left;
+	}
+	.logo {
+		float: left;
+		vertical-align: middle;
+		line-height: 38px;
+		font-size: 20px;
+	}
+	.doc-menu {
+		float: right;
+		margin: 10px 0;
+		text-align: right;
+	}
+	.doc-menu a {
+		font-weight: bold;
+		margin-left: 20px;
+		text-decoration: none;
+	}
+	.about {
+		text-align: right;
+		width: 100%;
+	}
+	.thank-you {
+		margin: 10px;
+		border: solid 1px #e1e1e1;
+		background: #f5f8fa;
+		overflow: auto;
+		float: left;
+		padding: 10px;
+	}
+	.inner-inner {
+		padding: 0 10px;
+	}
+	.developers-color {
+		color: #4C72D6;
+	}
+	.extra {
+		padding: 20px;
+	}
+	.row {
+		width: 100%;
+	}
+	.row:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.col-3 {
+		width: 25%;
+		float: left;
+		margin-top: 20px;
+	}
+	.text-center {
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body id="top">
+	<div class="row-body">
+		<div class="message-container">
+			<div class="message-form-content">
+				<div class="message-inner">
+					<a href="https://xandr.co/qalar" target="_blank"><div class="logo">QALar</div></a>
+					<div class="doc-menu">
+						<a href="#requirements">Requirements</a>
+						<a href="#installation">Installation</a>
+						<a href="#configuration">Configuration</a>
+						<a href="#updates">Updates</a>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="message-inner">
+					<div class="about">Last update: 17 June 2019 | <a>version 1.0.0</a></div>
+				</div>
+				<div class="divider"></div>
+					<div class="thank-you">Thank you for purchasing QALar application! If you have any questions that are beyond the scope of this documentation, please feel free to contact me on <a href="https://xandr.co/" target="_blank">that page</a>.</div>
+				<div class="divider"></div>
+				<div class="extra row">
+                    <div class="col-3 text-center">
+                        <a href="https://laravel.com/" target="_blank" class="text-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 84.1 57.6"><path fill="#FB503B" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path></svg>
+                            <p class="mt-2">Laravel 5.8</p>
+                        </a>
+                    </div>
+                    <div class="col-3 text-center">
+                        <a href="https://vuejs.org/" target="_blank" class="text-dark">
+                            <img src="https://vuejs.org/images/logo.png" style="height: 60px;">
+                            <p class="mt-2">VueJs 2.6</p>
+                        </a>
+                    </div>
+                    <div class="col-3 text-center">
+                        <a href="https://getbootstrap.com/" target="_blank" class="text-dark">
+                            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" style="height: 60px;">
+                            <p class="mt-2">Bootstrap 4.3</p>
+                        </a>
+                    </div>
+                    <div class="col-3 text-center">
+                        <a href="https://jquery.com/" target="_blank" class="text-dark">
+                            <img src="https://brand.jquery.org/resources/jquery-mark-light.gif" style="height: 60px;">
+                            <p class="mt-2">jQuery 3.4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+				<div class="message-inner">
+					<h3 id="requirements"><strong>1. Requirements</strong> <small><a href="#top" style="float:right">Back to top</a></small></h3>
+					To make application working you need:
+					<ol>
+						<li><strong><a href="https://getcomposer.org/" target="_blank">Composer</a> to manage dependencies</strong></li>
+						<li><strong>PHP >= 7.1.3</strong></li>
+						<li><strong>BCMath PHP Extension</strong></li>
+						<li><strong>Ctype PHP Extension</strong></li>
+						<li><strong>JSON PHP Extension</strong></li>
+						<li><strong>Mbstring PHP Extension</strong></li>
+						<li><strong>OpenSSL PHP Extension</strong></li>
+						<li><strong>PDO PHP Extension</strong></li>
+						<li><strong>Tokenizer PHP Extension</strong></li>
+						<li><strong>XML PHP Extension</strong></li>
+						<li><strong>Rewrite Module for Apache</strong></li>
+					</ol>
+					Also, for some functions you will need:
+					<ol>
+						<li><strong>SMTP</strong> or <strong>Mailgun</strong> for sending emails</li>
+					</ol>
+
+				</div>
+				<div class="divider"></div>
+				<div class="message-inner">
+					<h3 id="installation"><strong>2. Installation Process</strong> <small><a href="#top" style="float:right">Back to top</a></small></h3>
+					<ol>
+						<li>Unzip archive and upload all files to your web server through FTP (Usually <strong>public_html</strong> folder).</li>
+						<li>Create new database, which will be used by application.</li>
+						<li>Through SSH terminal run these commands:</li>
+						<ul>
+							<li><pre>composer install</pre></li>
+							<li><pre>npm install</pre></li>
+							<li><pre>cp .env.example .env</pre></li>
+							<li><pre>php artisan key:generate</pre></li>
+							<li><pre>php artisan storage:link</pre></li>
+						</ul>
+						<li>With any text editor open the .env file located inside the root folder and set your MySQL settings:
+							<pre>
+APP_NAME    <- Your application name
+...
+APP_URL     <- Your website URL
+...
+DB_HOST     <- Your database host
+DB_DATABASE <- Your database table (from step 2)
+DB_USERNAME <- Your database username
+DB_PASSWORD <- Your database password
+							</pre>
+						</li>
+						<li>Set the <strong>CHMOD</strong> to 777, 775 or 755 (depending on the server configuration) to the following folders:</li>
+						<ul>
+							<li><pre>storage/</pre> and all storage subfolders</li>
+							<li><pre>bootstrap/cache/</pre></li>
+						</ul>
+						<li>Through SSH terminal run this command:</li>
+						<ul>
+							<li><pre>php artisan migrate:fresh</pre></li>
+						</ul>
+						<li>Choose one from these options:</li>
+						<ul>
+							<li>If you wanna some dummy content run (It may take time to run):</li>
+							<ul>
+								<li><pre>php artisan db:seed --class=DatabaseSeeder</pre></li>
+							</ul>
+							<li>If you do not want dummy content run:</li>
+							<ul>
+								<li><pre>php artisan db:seed --class=AdminAccountSeeder</pre></li>
+							</ul>
+						</ul>
+					</ol>
+
+				</div>
+				<div class="divider"></div>
+				<div class="message-inner">
+
+					<h3 id="configuration"><strong>3. Configuration</strong> <small><a href="#top" style="float:right">Back to top</a></small></h3>
+
+					<p>The default email for the Admin is "<strong>admin@admin.com</strong>", and the password is "<strong>password</strong>" without quotes. You need to change it after signing in.</p>
+
+					<br>
+
+					<div class="inner-inner">
+
+						<li><strong>Add Topics</strong></li>
+						<p>Application require at least 5 topics to allow users to add new questions.</p>
+						<p>You can add new topics from admin panel or create new spaces from any account.</p>
+
+						<br>
+
+						<li><strong>Code changes</strong></li>
+						<p>If you plan to make changes in code - each time clear cache from admin panel, settings page.</p>
+						<p>As application is built on Laravel - you can run any Laravel command or install any package compatible with Laravel.</p>
+
+						<br>
+
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="message-inner">
+
+					<h3 id="updates"><strong>4. Updates</strong> <small><a href="#top" style="float:right">Back to top</a></small></h3>
+					<p>Each update replace some old files. If you made changes in code and want to update it - you can ask permission to private GitHub repository with all changes. You can ask access <a href="https://xandr.co/" target="_blank">here</a>.</p>
+
+				</div>
+				<div class="divider"></div>
+				<div class="message-inner">
+
+					Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://xandr.co/qalar" target="_blank">QALar</a>. All rights reserved.
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
